@@ -39,12 +39,14 @@
 
 ```bash
 # 1. Клонируйте репозиторий
-git clone https://github.com/ВАШ_ЛОГИН/ВАШ_РЕПОЗИТОРИЙ.git
-cd ВАШ_РЕПОЗИТОРИЙ
+git clone https://github.com/GodOfSpawnPeek/my-vite-redux-app.git
 
 # 2. Установите зависимости
+
+cd my-vite-redux-app
 npm install
-cd client
+
+cd backend
 npm install
 
 # 3. Настройте .env в папке server:
@@ -52,11 +54,13 @@ npm install
 # JWT_SECRET=your_jwt_secret_key_here
 
 # 4. Запустите MongoDB и оба сервера
-# Сервер
-cd server
+
+# Backend
+cd backend
 npm run dev
-# Клиент
-cd client
+
+# Frontend
+cd my-vite-redux-app
 npm run dev
 ```
 
@@ -103,7 +107,6 @@ npm run dev
   "password": "String",
   "role": "String",
   "description": "String",
-  "workplace": "String",
   "portfolio": [ /* Project */ ]
 }
 ```
@@ -165,4 +168,4 @@ node app.js          # Запуск без nodemon
 
 ---
 
-> **Если есть вопросы или предложения — пишите!**
+
