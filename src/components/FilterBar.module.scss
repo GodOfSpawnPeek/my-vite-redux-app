@@ -1,0 +1,29 @@
+.filterBar {
+  background: #fafdff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+  border: 1px solid #dde3ea;
+  padding: 18px 24px 14px 24px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.label {
+  font-weight: 500;
+  color: #23272f;
+  margin-right: 8px;
+}
+.select {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #dde3ea;
+  background: #f4f7fa;
+  font-size: 1rem;
+  color: #23272f;
+  outline: none;
+  transition: border 0.18s;
+  &:focus {
+    border: 1.5px solid #2563eb;
+  }
+} 

@@ -1,0 +1,35 @@
+.roleSelector {
+  margin-bottom: 12px;
+
+  label {
+    display: block;
+    margin-bottom: 4px;
+    color: #23272f;
+    font-weight: 500;
+    font-size: 0.98rem;
+  }
+
+  select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1.2px solid #cfd8e3;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #f6f8fa;
+    transition: border 0.18s, box-shadow 0.18s;
+    box-shadow: none;
+    color: #23272f;
+    &:focus {
+      border-color: #2563eb;
+      outline: none;
+      background: #fff;
+      box-shadow: 0 0 0 2px #2563eb22;
+    }
+  }
+
+  .error {
+    color: #e74c3c;
+    font-size: 0.92rem;
+    margin-top: 3px;
+  }
+} 

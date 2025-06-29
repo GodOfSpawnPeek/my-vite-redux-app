@@ -1,0 +1,98 @@
+.projectCard {
+  border: 1.5px solid #dde3ea;
+  border-radius: 12px;
+  padding: 28px 20px 22px 20px;
+  background: #fff;
+  min-width: 260px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.09);
+}
+.title {
+  margin: 0;
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #000000;
+}
+.previewImage {
+  max-width: 200px;
+  max-height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 14px 0 8px 0;
+  box-shadow: 0 2px 8px 0 rgba(37,99,235,0.07);
+}
+.description {
+  margin: 8px 0;
+  color: #23272f;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.links {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.link {
+  color: #2563eb;
+  font-size: 15px;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.18s;
+  &:hover {
+    color: #1746a2;
+  }
+}
+.btnRow {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+}
+.editBtn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-size: 1.01rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(37,99,235,0.07);
+  transition: background 0.18s, box-shadow 0.18s;
+  &:hover {
+    background: #1746a2;
+    box-shadow: 0 4px 16px 0 rgba(37,99,235,0.13);
+  }
+}
+.deleteBtn {
+  background: #eee;
+  color: #e0245e;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-size: 1.01rem;
+  cursor: pointer;
+  transition: background 0.18s;
+  &:hover {
+    background: #fbe9ef;
+  }
+}
+@media (max-width: 600px) {
+  .projectCard {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 14px 6px 14px 6px;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .editBtn, .deleteBtn {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 0.98rem;
+  }
+} 
